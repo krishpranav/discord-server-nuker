@@ -12,3 +12,15 @@ const presser = String.raw` DISCORD SERVER NUKER`
 
 console.log(red(presser));
 
+client.on("ready", () => {
+    console.log(red('           ════════════════════════════════════════════════════════════════════════════════'));
+    console.log(greenBright(`                                      Logged in as: ${client.user.username}#${client.user.discriminator}`));
+    console.log(greenBright(`                                      Prefix: ${prefix}`));
+    console.log(greenBright(`                                      DisableEveryone: ${disableEveryone}`));
+    console.log(greenBright(`                                      Permission Required: ADMINISTRATOR`));
+    console.log(red('           ════════════════════════════════════════════════════════════════════════════════'));
+    console.log("");
+    client.user.setActivity({ type: "PLAYING", name: "presser" }); // Delete this if you wish.
+});
+
+
